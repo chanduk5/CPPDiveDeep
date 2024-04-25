@@ -1,6 +1,6 @@
 #include "../inc/includes.h"
 
 int main() {
-  vectorImplementations();
+  //vectorImplementations();
   return 0;
 }

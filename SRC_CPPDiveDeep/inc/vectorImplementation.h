@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <initializer_list>
 
@@ -47,23 +49,3 @@ public:
     return arr[index];
   }
 };
-
-void vectorImplementations() {
-  VectorLocal<int> vec = { 1,2,3,4,5 };
-  vec.push_back(10);
-  vec.push_back(10);
-  vec.push_back(10);
-
-  for (auto index = 0; index < vec.Size(); index++) {
-    std::cout << vec.get(index) << std::endl;
-  }
-
-  VectorLocal<double> vec1 = { 1.2,2,3,4,5 };
-  vec1.push_back(10);
-  vec1.push_back(10);
-  vec1.push_back(10);
-
-  for (auto index = 0; index < vec1.Size(); index++) {
-    std::cout << vec1.get(index) << std::endl;
-  }
-}
