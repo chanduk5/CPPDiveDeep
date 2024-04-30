@@ -30,8 +30,8 @@ public:
 private:
     std::string levelToString(LogLevel level);
     std::string moduleToString(LogModule module);
-    std::ofstream logfile;
-    std::mutex m_mutex;
     LogLevel m_defaultLevel;
+    std::mutex m_mutex;
+    std::ofstream logfile;
     std::unordered_map<LogModule, LogLevel> m_moduleLevels;
 };
