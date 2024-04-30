@@ -13,6 +13,7 @@ Tools:
 7. chage directory to build: cd build
 
 Build Windows:
+
 8. MSYS2 Software Distribution and Building Platform for Windows
 9. compiler: MINGW64
 10. configure and Generate CMakeFiles: cmake -G "MinGW Makefiles" ..
@@ -21,6 +22,7 @@ Build Windows:
 13. Specific target: cmake --build . --clean-first --target targetName
 
 Build Linux:
+
 14. Build system: Ninja
 15. configure and Generate CMakeFiles: cmake -G Ninja ..
 16. Build: Ninja
