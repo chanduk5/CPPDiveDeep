@@ -1,6 +1,7 @@
 
 set(SOURCES
     src/source.cpp
+    src/logger.cpp
 )
 
 include_directories(inc)
