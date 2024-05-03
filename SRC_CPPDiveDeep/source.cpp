@@ -1,5 +1,6 @@
-#include "../inc/includes.h"
-#include "../inc/logger.h"
+#include "inc/includes.h"
+#include "inc/logger.h"
+#include "TaskManagementSystem/inc/taskManagement.h"
 
 void moduleLevels() {
   Logger log("Testlog.txt", LogLevel::INFO);
@@ -8,6 +9,7 @@ void moduleLevels() {
 
 int main() {
   //vectorImplementations();
-  moduleLevels();
+  //moduleLevels();
+  TestTaskManagement();
   return 0;
 }

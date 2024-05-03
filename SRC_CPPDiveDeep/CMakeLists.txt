@@ -1,7 +1,8 @@
 
 set(SOURCES
-    src/source.cpp
+    source.cpp
     src/logger.cpp
+    TaskManagementSystem/src/taskManagement.cpp
 )
 
 include_directories(inc)
