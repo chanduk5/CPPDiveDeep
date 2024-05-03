@@ -18,7 +18,7 @@ jobs:
       with:
         cmake-version: '3.24'
     - name: Configure CMake
-      run: cmake -s . -B build
+      run: cmake -S . -B build
     - name: build
       run: cmake --build build
     - name: Run tests
