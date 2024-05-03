@@ -11,16 +11,16 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-set(TESTS
-    testMain.cpp
+file(GLOB TESTS
+    *.cpp
 )
 
-add_executable(TestCPPDiveDeep  
+add_executable(test  
                ${TESTS} )
                
-target_link_libraries(TestCPPDiveDeep gtest_main gmock_main)
+target_link_libraries(test gtest_main gmock_main)
 
-add_test(NAME TestCPPDiveDeep COMMAND TestCPPDiveDeep)
+add_test(NAME TestCPPDiveDeep COMMAND test)
 
 #include(GoogleTest)
 #gtest_discover_tests(TestCPPDiveDeep)
