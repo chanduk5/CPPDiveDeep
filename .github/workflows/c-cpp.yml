@@ -25,7 +25,7 @@ jobs:
       run: cmake --build build --target test
 
     - name: Run Google Test cases and generate XML report
-      run: ./tests.exe --gtest_output=xml:test_results.xml
+      run: ./test.exe --gtest_output=xml:test_results.xml
  
     - name: Save test results
       uses: actions/checkout@v4
