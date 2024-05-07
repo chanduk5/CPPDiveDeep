@@ -26,10 +26,10 @@ jobs:
 
     - name: Run Google Test cases and generate XML report
             cd TEST_CPPDiveDeep
-      run: ./test.exe --gtest_output=xml:test_results.xml
+      run: build/TEST_CPPDiveDeep/./test --gtest_output=xml:test_results.xml
  
     - name: Save test results
       uses: actions/checkout@v4
       with:
         name: test-results
-        path: TEST_CPPDiveDeep/test_results.xml
+        path: build/TEST_CPPDiveDeep/test_results.xml
