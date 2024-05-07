@@ -8,4 +8,4 @@ set(TASKMANAGEMENTSYSTEM_SOURCES
 )
 
 include_directories(inc)
-add_library(taskManagementSystem ${TASKMANAGEMENTSYSTEM_SOURCES})
+add_library(taskManagementSystem_lib ${TASKMANAGEMENTSYSTEM_SOURCES})

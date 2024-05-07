@@ -7,11 +7,8 @@ set(SOURCES
 
 include_directories(inc)
 
-add_subdirectory(TaskManagementSystem)
-aux_source_directory(TaskManagementSystem TASKMANAGEMENTSYSTEM_SOURCES)
-
 add_executable(CPPDiveDeep  
-               ${SOURCES}
-               taskManagementSystem)
-               
-target_link_libraries(CPPDiveDeep gtest_main gmock_main)
+               ${SOURCES})
+
+add_subdirectory(taskManagementSystem)
+target_link_libraries(CPPDiveDeep taskManagementSystem_lib gtest_main gmock_main)
